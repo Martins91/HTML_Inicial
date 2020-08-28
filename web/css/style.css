@@ -4,6 +4,46 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+p { 
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.btn {
+    border: 3px solid #fce63e;
+    padding: 10px 30px;
+    color: #fce63e;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .1em;
+}
+
+.btn:hover {
+    color: #fff;
+    border-color: #ffff;
+}
+
+.subtitulo {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    letter-spacing: .1em;  
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;    
+}
+
+.subtitulo::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #000;
+    margin: 8px auto;
+}
 /* Header */
 
 .header {
@@ -57,7 +97,55 @@ body {
     text-transform: uppercase;
 }
 
-.quotw-externo {
-    
+.quote-externo {
+    max-width: 320px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    color: #fff;
 }
-  
+
+.quote-externo p {
+    font-style:  italic;
+}
+
+.quote-externo p:before, .quote-externo p::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #fff;
+    margin: 14px auto 10px auto;
+}
+
+.quote-externo cite {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: .1em;
+}
+
+/* Produtos */
+
+.produtos {
+    padding: 60px;
+
+}
+
+.produtos_lista li {
+    background: #fce63e;
+    text-align: center;
+}
+
+.produtos_lista li h3{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;  
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+
+
+.produtos_icone {
+    background: #000;
+    padding: 20px;
+}
